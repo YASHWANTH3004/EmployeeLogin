@@ -30,10 +30,10 @@ db.connect((err) => {
 
 // Sign-Up endpoint
 app.post('/signup', (req, res) => {
-  const { employee_id, username, email, password } = req.body;
+  const { employee_id, user_name, email, password } = req.body;
 
-  const sql = 'INSERT INTO employees (employee_id, username, email, password) VALUES (?, ?, ?, ?)';
-  db.query(sql, [employee_id, username, email, password], (err, result) => {
+  const sql = 'INSERT INTO employees (employee_id, user_name, email, password) VALUES (?, ?, ?, ?)';
+  db.query(sql, [employee_id, user_name, email, password], (err, result) => {
     if (err) {
       console.error('Error inserting data:', err.message);
       res.status(500).send('Error saving data to the database');
