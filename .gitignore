@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+
+# Build and temporary files
+dist/
+build/
+*.tmp
+*.cache
+*.pid
+*.seed
+*.gz
+
+# Static assets (optional)
+public/images/temp/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Coverage directory
+coverage/
+
+# Dependency lock files (optional, if you don't want to track them)
+package-lock.json
+yarn.lock
